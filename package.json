@@ -1,0 +1,25 @@
+{
+  "name": "solana-snipe-bot",
+  "version": "0.1.0",
+  "description": "Momentum / new-token sniping bot for Solana (pump.fun launches), executed via Jupiter.",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "generate-wallet": "ts-node scripts/generate-wallet.ts",
+    "check-balance": "ts-node scripts/check-balance.ts",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
